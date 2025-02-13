@@ -74,13 +74,13 @@ blue {
 }
 
 a {
-  color: #1772d0;
+  color: #181C62;
   text-decoration: none;
 }
 
 a:focus,
 a:hover {
-  color: #f09228;
+  color: #D71440;
   text-decoration: none;
 }
 
