@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>Tianyu Sun</title>
+    <title>Rain Sun</title>
 
     <meta name="author" content="Tianyu Sun">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,7 +20,7 @@
             <tr style="padding:0px">
               <td style="padding:2.5%;width:63%;vertical-align:middle">
                 <p class="name" style="text-align: center;">
-                  Tianyu Sun
+                  Rain Sun
                 </p>
                 <p>Ph.D. student <a href="https://www.ntu.edu.sg/s-lab">S-Lab</a>, <a href="https://www.ntu.edu.sg/computing">College of Computing and Data Science</a>, <a href="https://www.ntu.edu.sg/">Nanyang Technological University</a>.
                 </p>
@@ -205,9 +205,12 @@
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>Professional Services</h2>
                 <p>
-                  I'm interested in computer vision, deep learning, generative AI, and image processing. Most of my research is about inferring the physical world (shape, motion, color, light, etc) from images, usually with radiance fields. Some papers are <span class="highlight">highlighted</span>.
+                  <b>Conference Reviewer:</b> ECCV, CVPR, NeurIPS, ICRA, IROS. 
                 </p>
-              </td>
+                 <p>
+                  <b>Journal Reviewer:</b> TCSVT, RA-L, KBS. 
+                </p>
+	      </td>
             </tr>
           </tbody></table>
 
@@ -220,6 +223,55 @@
                 </p>
               </td>
             </tr>
+    <tr onmouseout="simvs_stop()" onmouseover="simvs_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='simvs_image'><video  width=100% muted autoplay loop>
+          <source src="images/simvs.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/simvs.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function simvs_start() {
+            document.getElementById('simvs_image').style.opacity = "1";
+          }
+
+          function simvs_stop() {
+            document.getElementById('simvs_image').style.opacity = "0";
+          }
+          simvs_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://nerf-casting.github.io/">
+          <span class="papertitle">SimVS: Simulating World Inconsistencies for Robust View Synthesis</span>
+        </a>
+        <br>
+        <a href="https://alextrevithick.github.io/">Alex Trevithick</a>,
+        <a href="https://scholar.google.com/citations?user=-KSDNZQAAAAJ&hl=en">Roni Paiss</a>,
+        <a href="https://henzler.github.io/">Philipp Henzler</a>,
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+        <a href="https://www.cs.columbia.edu/~rundi/">Rundi Wu</a>,
+        <a href="https://hadizayer.github.io/">Hadi Alzayer</a>,
+        <a href="https://ruiqigao.github.io/">Ruiqi Gao</a>,
+        <a  href="https://poolio.github.io/">Ben Poole</a>,
+				<strong>Jonathan T. Barron</strong>, 
+        <a href="https://holynski.org/">Aleksander Holynski</a>,
+        <a href="https://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>,
+        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>
+        <br>
+        <em>arXiv</em>, 2024
+        <br>
+        <a href="https://alextrevithick.github.io/simvs/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2412.07696">arXiv</a>
+        <p></p>
+        <p>
+        Simulating the world with video models lets you make inconsistent captures consistent.
+        </p>
+      </td>
+    </tr>
           </tbody></table>
 
 		  
