@@ -65,6 +65,7 @@
           </tbody></table>
 		
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		  
 	    <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
 	      <td style="padding:16px;width:20%;vertical-align:middle">
 	        <div class="one">
@@ -90,8 +91,8 @@
 	          <span class="papertitle">Efficient 3D Perception on Multi-Sweep Point Cloud with Gumbel Spatial Pruning</span>
 	        </a>
 	        <br>
-	        <strong>Tianyu Sun</strong>, 
-	        Jianhao Li,
+	        <strong>Tianyu Sun</strong>*, 
+	        Jianhao Li*,
 					Xueqian Zhang, 
 	        Zhongdao Wang,
 	        Bailan Feng,
@@ -108,6 +109,42 @@
 	      </td>
 	    </tr>
 	
+	    <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
+	      <td style="padding:16px;width:20%;vertical-align:middle">
+	        <div class="one">
+	          <div class="two" id='r2r_image'><video  width=100% muted autoplay loop>
+	          <source src="images/r2r.mp4" type="video/mp4">
+	          Your browser does not support the video tag.
+	          </video></div>
+	          <img src='images/r2r.jpg' width=100%>
+	        </div>
+	        <script type="text/javascript">
+	          function r2r_start() {
+	            document.getElementById('r2r_image').style.opacity = "1";
+	          }
+	
+	          function r2r_stop() {
+	            document.getElementById('r2r_image').style.opacity = "0";
+	          }
+	          r2r_stop()
+	        </script>
+	      </td>
+	      <td style="padding:8px;width:80%;vertical-align:middle">
+	        <a>
+	          <span class="papertitle">Variation-Robust Few-Shot 3D Affordance Segmentation for Robotic Manipulation</span>
+	        </a>
+	        <br>
+	        Dingchang Hu*, Tianyu Sun*, Pengwei Xie, Siang Chen, Huazhong Yang, Guijin Wang
+	        <br>
+	        <em>RA-L</em>, 2025
+	        <br>
+	        <a href="https://ieeexplore.ieee.org/abstract/document/10819648">Paper</a>
+	        <p></p>
+	        <p>
+			An orientation-tolerant feature extractor to address pose variation between support and query point cloud objects, and present a multi-scale label propagation algorithm for variation in completeness. 
+	        </p>
+	      </td>
+	    </tr>
 	
 	    <tr onmouseout="simvs_stop()" onmouseover="simvs_start()">
 	      <td style="padding:16px;width:20%;vertical-align:middle">
