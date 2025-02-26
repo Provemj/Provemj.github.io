@@ -160,6 +160,43 @@
 	      </td>
 	    </tr>
 
+	    <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
+	      <td style="padding:16px;width:20%;vertical-align:middle">
+	        <div class="one">
+	          <div class="two" id='r2r_image'><video  width=100% muted autoplay loop>
+	          <source src="images/slf.png" type="video/mp4">
+	          Your browser does not support the video tag.
+	          </video></div>
+	          <img src='images/slf.png' width=100%>
+	        </div>
+	        <script type="text/javascript">
+	          function r2r_start() {
+	            document.getElementById('r2r_image').style.opacity = "1";
+	          }
+	
+	          function r2r_stop() {
+	            document.getElementById('r2r_image').style.opacity = "0";
+	          }
+	          r2r_stop()
+	        </script>
+	      </td>
+	      <td style="padding:8px;width:80%;vertical-align:middle">
+	        <a>
+	          <span class="papertitle">Segment, Lift and Fit: Automatic 3D Shape Labeling from 2D Prompts</span>
+	        </a>
+	        <br>
+	        Jianhao Li*, <strong>Tianyu Sun</strong>*, Zhongdao Wang, Enze Xie, Bailan Feng, Hongbo Zhang, Ze Yuan, Ke Xu, Jiaheng Liu, Ping Luo
+	        <br>
+	        <em>European Conference on Computer Vision (ECCV)</em>, 2024
+	        <br>
+	        <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/11297.pdf">Paper</a>
+	        <p></p>
+	        <p>
+			A Segment, Lift, and Fit (SLF) paradigm to predict 3D shapes of objects from 2D prior, not requiring training on a specific dataset. 
+	        </p>
+	      </td>
+	    </tr>
+		  
 	<tr onmouseout="simvs_stop()" onmouseover="simvs_start()">
 	      <td style="padding:16px;width:20%;vertical-align:middle">
 	        <div class="one">
