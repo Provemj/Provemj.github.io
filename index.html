@@ -77,223 +77,205 @@
             </tr>
           </tbody></table>
 		
-	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;
-	              margin-right:auto;margin-left:auto;"><tbody>
+	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+	  <tbody>
 	
-	    <!-- ====================== CATEGORY: 3D Perception ====================== -->
-	    <tr>
-	      <td style="padding:16px;width:100%;vertical-align:middle">
-	        <h3 style="color:#004D98; margin-bottom:0px;">3D Perception & Point Clouds</h3>
-	      </td>
-	    </tr>
-	
-	    <!-- Paper 1: Gumbel Spatial Pruning -->
-	    <tr onmouseover="hoverStart(this)" onmouseout="hoverStop(this)">
+	    <!-- Paper 1 -->
+	    <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
 	      <td style="padding:16px;width:20%;vertical-align:middle">
 	        <div class="one">
-	          <div class="two hover-video">
-	            <video width=100% muted autoplay loop>
+	          <div class="two" id="r2r_image">
+	            <video width="100%" muted autoplay loop>
 	              <source src="images/gss.JPG" type="video/mp4">
+	              Your browser does not support the video tag.
 	            </video>
 	          </div>
-	          <img src='images/gss.JPG' width=100%>
+	          <img src="images/gss.JPG" width="100%">
 	        </div>
 	        <script type="text/javascript">
-	          function r2r_start(){ document.getElementById('r2r_image').style.opacity="1"; }
-	          function r2r_stop(){ document.getElementById('r2r_image').style.opacity="0"; }
-	          r2r_stop()
+	          function r2r_start() { document.getElementById('r2r_image').style.opacity = "1"; }
+	          function r2r_stop() { document.getElementById('r2r_image').style.opacity = "0"; }
+	          r2r_stop();
 	        </script>
 	      </td>
 	
 	      <td style="padding:8px;width:80%;vertical-align:middle">
-	        <span class="papertitle">Efficient 3D Perception on Multi-Sweep Point Cloud with Gumbel Spatial Pruning</span>
+	        <a><span class="papertitle">Efficient 3D Perception on Multi-Sweep Point Cloud with Gumbel Spatial Pruning</span></a>
 	        <br>
 	        <strong>Tianyu Sun</strong>*, Jianhao Li*, Xueqian Zhang, Zhongdao Wang, Bailan Feng, Ke Xu, Hengshuang Zhao
 	        <br>
-	        <em>ICRA 2025</em>
+	        <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2025
 	        <br>
 	        <a href="https://arxiv.org/abs/2411.07742">Paper</a>
-	        <p>A dynamic Gumbel-based pruning layer for efficient LiDAR perception.</p>
+	        <p>A simple yet effective Gumbel Spatial Pruning (GSP) layer that dynamically prunes points based on a learned end-to-end sampling.</p>
 	      </td>
 	    </tr>
 	
-	
-	    <!-- ====================== CATEGORY: Robot Learning ====================== -->
-	    <tr>
-	      <td style="padding:16px;width:100%;vertical-align:middle">
-	        <h3 style="color:#004D98; margin-bottom:0px;">Robot Learning & Manipulation</h3>
-	      </td>
-	    </tr>
-	
-	    <!-- Paper 2: Few-shot 3D Affordance -->
-	    <tr onmouseout="aff_stop()" onmouseover="aff_start()">
+	    <!-- Paper 2 -->
+	    <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
 	      <td style="padding:16px;width:20%;vertical-align:middle">
 	        <div class="one">
-	          <div class="two" id='aff_image'>
-	            <video width=100% muted autoplay loop>
+	          <div class="two" id="r2r_image">
+	            <video width="100%" muted autoplay loop>
 	              <source src="images/afford.png" type="video/mp4">
+	              Your browser does not support the video tag.
 	            </video>
 	          </div>
-	          <img src='images/afford.png' width=100%>
+	          <img src="images/afford.png" width="100%">
 	        </div>
-	        <script>
-	          function aff_start(){ document.getElementById('aff_image').style.opacity="1"; }
-	          function aff_stop(){ document.getElementById('aff_image').style.opacity="0"; }
-	          aff_stop()
+	        <script type="text/javascript">
+	          function r2r_start() { document.getElementById('r2r_image').style.opacity = "1"; }
+	          function r2r_stop() { document.getElementById('r2r_image').style.opacity = "0"; }
+	          r2r_stop();
 	        </script>
 	      </td>
 	
 	      <td style="padding:8px;width:80%;vertical-align:middle">
-	        <span class="papertitle">Variation-Robust Few-Shot 3D Affordance Segmentation</span>
+	        <a><span class="papertitle">Variation-Robust Few-Shot 3D Affordance Segmentation for Robotic Manipulation</span></a>
 	        <br>
 	        Dingchang Hu*, <strong>Tianyu Sun</strong>*, Pengwei Xie, Siang Chen, Huazhong Yang, Guijin Wang
 	        <br>
-	        <em>RA-L 2025</em>
+	        <em>IEEE Robotics and Automation Letters (RA-L)</em>, 2025
 	        <br>
 	        <a href="https://ieeexplore.ieee.org/abstract/document/10819648">Paper</a>
-	        <p>Orientation and completeness variation-robust affordance segmentation.</p>
+	        <p>An orientation-tolerant feature extractor and multi-scale label propagation for robust few-shot affordance segmentation.</p>
 	      </td>
 	    </tr>
 	
-	    <!-- Paper 3: Part-Guided RL -->
-	    <tr onmouseout="pg_stop()" onmouseover="pg_start()">
+	    <!-- Paper 3 -->
+	    <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
 	      <td style="padding:16px;width:20%;vertical-align:middle">
 	        <div class="one">
-	          <div class="two" id='pg_image'>
-	            <video width=100% muted autoplay loop>
-	              <source src="images/part.JPG" type="video/mp4">
-	            </video>
-	          </div>
-	          <img src='images/part.JPG' width=100%>
-	        </div>
-	        <script>
-	          function pg_start(){ document.getElementById('pg_image').style.opacity="1"; }
-	          function pg_stop(){ document.getElementById('pg_image').style.opacity="0"; }
-	          pg_stop()
-	        </script>
-	      </td>
-	
-	      <td style="padding:8px;width:80%;vertical-align:middle">
-	        <span class="papertitle">Part-guided 3D RL for Sim2Real Manipulation</span>
-	        <br>
-	        Pengwei Xie*, Rui Chen*, Siang Chen*, Yuzhe Qin, Fanbo Xiang,
-	        <strong>Tianyu Sun</strong>, Jing Xu, Guijin Wang, Hao Su
-	        <br>
-	        <em>RA-L 2023</em>
-	        <br>
-	        <a href="https://ieeexplore.ieee.org/document/10242361">Paper</a>
-	        <p>Integrating 3D part segmentation and RL for real-world manipulation.</p>
-	      </td>
-	    </tr>
-	
-	
-	    <!-- ====================== CATEGORY: 3D Reconstruction / Vision ====================== -->
-	    <tr>
-	      <td style="padding:16px;width:100%;vertical-align:middle">
-	        <h3 style="color:#004D98; margin-bottom:0px;">3D Reconstruction & Vision</h3>
-	      </td>
-	    </tr>
-	
-	    <!-- SLF -->
-	    <tr onmouseout="slf_stop()" onmouseover="slf_start()">
-	      <td style="padding:16px;width:20%;vertical-align:middle">
-	        <div class="one">
-	          <div class="two" id='slf_image'>
-	            <video width=100% muted autoplay loop>
+	          <div class="two" id="r2r_image">
+	            <video width="100%" muted autoplay loop>
 	              <source src="images/slf.png" type="video/mp4">
+	              Your browser does not support the video tag.
 	            </video>
 	          </div>
-	          <img src='images/slf.png' width=100%>
+	          <img src="images/slf.png" width="100%">
 	        </div>
-	        <script>
-	          function slf_start(){ document.getElementById('slf_image').style.opacity="1"; }
-	          function slf_stop(){ document.getElementById('slf_image').style.opacity="0"; }
-	          slf_stop()
+	        <script type="text/javascript">
+	          function r2r_start() { document.getElementById('r2r_image').style.opacity = "1"; }
+	          function r2r_stop() { document.getElementById('r2r_image').style.opacity = "0"; }
+	          r2r_stop();
 	        </script>
 	      </td>
 	
 	      <td style="padding:8px;width:80%;vertical-align:middle">
-	        <span class="papertitle">Segment, Lift and Fit: Automatic 3D Shape Labeling from 2D Prompts</span>
+	        <a><span class="papertitle">Segment, Lift and Fit: Automatic 3D Shape Labeling from 2D Prompts</span></a>
 	        <br>
-	        Jianhao Li*, <strong>Tianyu Sun</strong>*, Zhongdao Wang, Enze Xie, etc.
+	        Jianhao Li*, <strong>Tianyu Sun</strong>*, Zhongdao Wang, Enze Xie, Bailan Feng, Hongbo Zhang, Ze Yuan, Ke Xu, Jiaheng Liu, Ping Luo
 	        <br>
-	        <em>ECCV 2024</em>
+	        <em>European Conference on Computer Vision (ECCV)</em>, 2024
 	        <br>
 	        <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/11297.pdf">Paper</a>
-	        <p>Zero-shot 3D shape reconstruction guided by simple 2D priors.</p>
+	        <p>A Segment–Lift–Fit paradigm that predicts 3D shapes of objects from 2D priors without requiring dataset-specific training.</p>
 	      </td>
 	    </tr>
 	
-	
-	    <!-- ====================== CATEGORY: Depth / Segmentation ====================== -->
-	    <tr>
-	      <td style="padding:16px;width:100%;vertical-align:middle">
-	        <h3 style="color:#004D98; margin-bottom:0px;">Depth Estimation & Segmentation</h3>
-	      </td>
-	    </tr>
-	
-	    <!-- Depth Inpainting -->
-	    <tr onmouseout="depth_stop()" onmouseover="depth_start()">
+	    <!-- Paper 4 -->
+	    <tr onmouseout="simvs_stop()" onmouseover="simvs_start()">
 	      <td style="padding:16px;width:20%;vertical-align:middle">
 	        <div class="one">
-	          <div class="two" id='depth_image'>
-	            <video width=100% muted autoplay loop>
+	          <div class="two" id="simvs_image">
+	            <video width="100%" muted autoplay loop>
 	              <source src="images/ditr.png" type="video/mp4">
+	              Your browser does not support the video tag.
 	            </video>
 	          </div>
-	          <img src='images/ditr.png' width=100%>
+	          <img src="images/ditr.png" width="100%">
 	        </div>
-	        <script>
-	          function depth_start(){ document.getElementById('depth_image').style.opacity="1"; }
-	          function depth_stop(){ document.getElementById('depth_image').style.opacity="0"; }
-	          depth_stop()
+	        <script type="text/javascript">
+	          function simvs_start() { document.getElementById('simvs_image').style.opacity = "1"; }
+	          function simvs_stop() { document.getElementById('simvs_image').style.opacity = "0"; }
+	          simvs_stop();
 	        </script>
 	      </td>
 	
 	      <td style="padding:8px;width:80%;vertical-align:middle">
-	        <span class="papertitle">Diffusion-based Depth Inpainting for Transparent & Reflective Objects</span>
+	        <a><span class="papertitle">Diffusion-based depth inpainting for transparent and reflective objects</span></a>
 	        <br>
-	        <strong>Tianyu Sun</strong>*, Dingchang Hu*, Yixiang Dai, Guijin Wang  
+	        <strong>Tianyu Sun</strong>*, Dingchang Hu*, Yixiang Dai, Guijin Wang
 	        <br>
-	        <em>TCSVT 2024</em>
+	        <em>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</em>, 2024
 	        <br>
 	        <a href="https://ieeexplore.ieee.org/document/10613928">Paper</a>
-	        <p>A diffusion-based inpainting model specialized for challenging transparent surfaces.</p>
+	        <p>A diffusion-based depth inpainting framework for transparent and reflective surfaces.</p>
 	      </td>
 	    </tr>
 	
-	
-	    <!-- TROS-D -->
-	    <tr onmouseout="trosd_stop()" onmouseover="trosd_start()">
+	    <!-- Paper 5 -->
+	    <tr onmouseout="simvs_stop()" onmouseover="simvs_start()">
 	      <td style="padding:16px;width:20%;vertical-align:middle">
 	        <div class="one">
-	          <div class="two" id='trosd_image'>
-	            <video width=100% muted autoplay loop>
-	              <source src="images/trosd.JPG" type="video/mp4">
+	          <div class="two" id="simvs_image">
+	            <video width="100%" muted autoplay loop>
+	              <source src="images/part.JPG" type="video/mp4">
+	              Your browser does not support the video tag.
 	            </video>
 	          </div>
-	          <img src='images/trosd.JPG' width=100%>
+	          <img src="images/part.JPG" width="100%">
 	        </div>
-	        <script>
-	          function trosd_start(){ document.getElementById('trosd_image').style.opacity="1"; }
-	          function trosd_stop(){ document.getElementById('trosd_image').style.opacity="0"; }
-	          trosd_stop()
+	        <script type="text/javascript">
+	          function simvs_start() { document.getElementById('simvs_image').style.opacity = "1"; }
+	          function simvs_stop() { document.getElementById('simvs_image').style.opacity = "0"; }
+	          simvs_stop();
 	        </script>
 	      </td>
 	
 	      <td style="padding:8px;width:80%;vertical-align:middle">
-	        <span class="papertitle">TROSD: A Dataset for Transparent & Reflective Object Segmentation</span>
+	        <a><span class="papertitle">Part-guided 3D RL for Sim2Real articulated object manipulation</span></a>
 	        <br>
-	        <strong>Tianyu Sun</strong>, Guodong Zhang, Wenming Yang, Jing-hao Xue, Guijin Wang  
+	        Pengwei Xie*, Rui Chen*, Siang Chen*, Yuzhe Qin, Fanbo Xiang, <strong>Tianyu Sun</strong>, Jing Xu, Guijin Wang, Hao Su
 	        <br>
-	        <em>TCSVT 2023</em>
+	        <em>IEEE Robotics and Automation Letters (RA-L)</em>, 2023
 	        <br>
-	        <a href="https://provemj.github.io/trosd.github.io/">Project</a>
-	        <p>Large-scale real-world RGB-D dataset for transparent/reflective segmentation.</p>
+	        <a href="https://ieeexplore.ieee.org/document/10242361">Paper</a> |
+	        <a href="https://github.com/THU-VCLab/Part-Guided-3D-RL-for-Sim2Real-Articulated-Object-Manipulation">Code</a> |
+	        <a href="https://www.youtube.com/watch?v=b8KvOjlGNJs">Video</a>
+	        <p>A part-guided 3D reinforcement learning framework for articulated object manipulation without demonstrations.</p>
 	      </td>
 	    </tr>
 	
-	</tbody></table>
+	    <!-- Paper 6 -->
+	    <tr onmouseout="simvs_stop()" onmouseover="simvs_start()">
+	      <td style="padding:16px;width:20%;vertical-align:middle">
+	        <div class="one">
+	          <div class="two" id="simvs_image">
+	            <video width="100%" muted autoplay loop>
+	              <source src="images/trosd.JPG" type="video/mp4">
+	              Your browser does not support the video tag.
+	            </video>
+	          </div>
+	          <img src="images/trosd.JPG" width="100%">
+	        </div>
+	        <script type="text/javascript">
+	          function simvs_start() { document.getElementById('simvs_image').style.opacity = "1"; }
+	          function simvs_stop() { document.getElementById('simvs_image').style.opacity = "0"; }
+	          simvs_stop();
+	        </script>
+	      </td>
+	
+	      <td style="padding:8px;width:80%;vertical-align:middle">
+	        <a href="https://provemj.github.io/trosd.github.io/">
+	          <span class="papertitle">TROSD: A New RGB-D Dataset for Transparent and Reflective Object Segmentation in Practice</span>
+	        </a>
+	        <br>
+	        <strong>Tianyu Sun</strong>, Guodong Zhang, Wenming Yang, Jing-hao Xue, Guijin Wang
+	        <br>
+	        <em>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</em>, 2023
+	        <br>
+	        <a href="https://provemj.github.io/trosd.github.io/">Project</a> |
+	        <a href="https://ieeexplore.ieee.org/document/10064348">Paper</a> |
+	        <a href="https://github.com/Provemj/TROSNet">Github</a> |
+	        <a href="https://codeocean.com/capsule/8854419/tree/v1">Code Ocean</a> |
+	        <a href="http://www.tsinghua-ieit.com/trosd">Data</a>
+	        <p>A large-scale RGB-D dataset and model for transparent and reflective object segmentation.</p>
+	      </td>
+	    </tr>
+	
+	  </tbody>
+	</table>
 		
 	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
@@ -383,5 +365,6 @@
 	</script>
   </body>
 </html>
+
 
 
