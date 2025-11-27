@@ -88,10 +88,10 @@
 	    </tr>
 	
 	    <!-- Paper 1: Gumbel Spatial Pruning -->
-	    <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
+	    <tr onmouseover="hoverStart(this)" onmouseout="hoverStop(this)">
 	      <td style="padding:16px;width:20%;vertical-align:middle">
 	        <div class="one">
-	          <div class="two" id='r2r_image'>
+	          <div class="two hover-video">
 	            <video width=100% muted autoplay loop>
 	              <source src="images/gss.JPG" type="video/mp4">
 	            </video>
@@ -318,7 +318,7 @@
           </tbody></table>
 		
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-	    <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
+	    <tr onmouseover="hoverStart(this)" onmouseout="hoverStop(this)">
 	      <td style="padding:16px;width:20%;vertical-align:middle">
 	        <div class="one">
 	          <div class="two" id='r2r_image'><video  width=100% muted autoplay loop>
@@ -373,6 +373,15 @@
         </td>
       </tr>
     </table>
+  	<script>
+	function hoverStart(cell) {
+	  cell.querySelector(".hover-video").style.opacity = "1";
+	}
+	function hoverStop(cell) {
+	  cell.querySelector(".hover-video").style.opacity = "0";
+	}
+	</script>
   </body>
 </html>
+
 
