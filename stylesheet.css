@@ -150,3 +150,13 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+
+.research-category {
+    display: inline-block;
+    background-color: #EAF2FF;
+    color: #004D98;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 6px;
+}
